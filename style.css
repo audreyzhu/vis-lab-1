@@ -1,0 +1,81 @@
+
+h1 {
+    size: 36px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+body {
+    color: black;
+}
+
+/*ID selector */
+#content {
+    font-size: 16px;
+
+}
+/*class selector*/
+.button {
+    color: white;
+    background-color: maroon;
+    margin-left: 30px;
+    margin-right: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/*descendant selector*/
+div > p {
+    background-color: lightgray;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*hyperlink style settings*/
+a {
+    color: blue;
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+/*custom hover-effect for hyperlinks*/
+a:hover {
+    background-color: yellow;
+}
+
+
+/*column display settings*/
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    background-color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*image style settings*/
+.image {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
